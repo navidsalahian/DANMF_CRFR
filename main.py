@@ -20,7 +20,7 @@ def main(lambda0, lambda1, lambda2):
     args = Namespace(
         k_neigh=5,
         k_kmeans=10,
-        delta=0.3,
+        delta=1000,
         dataset=dataset,
         calculate_loss=False,
         dataset_path="datasets/DB_normalized/"+dataset+".mat",
@@ -48,7 +48,7 @@ nmi_arr, ari_arr, acc_arr = [], [], []
 if __name__ == "__main__":
     # run the code n times for achieving standard deviation and average measurements
     for i in tqdm(range(3)):
-        NMI, ARI, ACC = main(0.000001, 5, 0)
+        NMI, ARI, ACC = main(0.000001, 5, 0.1)
         nmi_arr.append(NMI)
         ari_arr.append(ARI)
         acc_arr.append(ACC)
