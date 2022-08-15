@@ -13,7 +13,7 @@ def main(lambda0, lambda1, lambda2):
 
     layer = [120, 100, 80]
     dataset = "mnist"
-    lambda0 = lambda0 # DI SIMILARITY
+    lambda0 = lambda0 # DIS SIMILARITY
     lambda1 = lambda1 # SIMILARITY
     lambda2 = lambda2 # FRP
 
